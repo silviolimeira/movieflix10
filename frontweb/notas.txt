@@ -1,0 +1,8 @@
+Environment Setup:
+$ export PATH=/d/projeto-novo/nvm-noinstall:/d/nodejs-nvm/:$PATH
+
+Install nvm Node:
+$ nvm install 14.18.2
+
+$ npx create-react-app movieflix --template typescript
+$ yarn create react-app movieflix --template typescript
