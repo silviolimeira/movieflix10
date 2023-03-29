@@ -37,19 +37,15 @@ const NavBar = () => {
           <h4>MovieFlix</h4>
         </Link>
       </div>
-      <div className="main-nav-login-logout">
-        {authContextData.authenticated ? (
-          <>
-            <a href="#logout" onClick={handleLogoutClick}>
-              SAIR
-            </a>
-          </>
-        ) : (
+      {authContextData.authenticated ? (
+        <div className="main-nav-login-logout">
           <a href="#logout" onClick={handleLogoutClick}>
             SAIR
           </a>
-        )}
-      </div>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
