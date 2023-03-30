@@ -1,0 +1,33 @@
+.admin-banner {
+  background: #525252;
+}
+
+.admin-banner h1 {
+  margin-left: 23px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+}
+
+.admin-banner p {
+  margin-left: 23px;
+  padding-top: 19px;
+  padding-bottom: 51px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+
+  color: #f2f2f2;
+}
