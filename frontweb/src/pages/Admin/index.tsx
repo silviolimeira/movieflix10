@@ -1,3 +1,5 @@
+import PrivateRoute from 'components/PrivateRoute';
+import Home from 'pages/Home';
 import { useContext } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Login from './Auth/Login';

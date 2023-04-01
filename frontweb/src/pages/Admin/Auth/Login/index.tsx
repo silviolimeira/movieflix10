@@ -44,7 +44,7 @@ const Login = () => {
           authenticated: true,
           tokenData: getTokenData(),
         });
-        console.log('before history replace');
+        console.log('before history replace, from: ', from);
         history.replace(from);
       })
       .catch((error) => {
