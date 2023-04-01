@@ -35,13 +35,13 @@ export const requestBackendLogin = (loginData: LoginData) => {
 };
 
 export const requestBackend = (config: AxiosRequestConfig) => {
+  console.log('requestBackend config: ', config);
   const headers = config.withCredentials
     ? {
         ...config.headers,
         Authorization: 'Bearer ' + getAuthData().access_token,
       }
     : config.headers;
-
   return axios({ ...config, baseURL: BASE_URL, headers });
 };
 
