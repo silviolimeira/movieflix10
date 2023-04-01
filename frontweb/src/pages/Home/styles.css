@@ -1,0 +1,33 @@
+.home-container {
+  background: #525252;
+  padding: 10px;
+}
+
+.home-container-genre-filter {
+  height: 60px;
+  background-color: #6c6c6c;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+@media (min-width: 576px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  .home-container-genre-filter {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    padding: 40px;
+  }
+  .home-container-genre-filter {
+    margin-bottom: 40px;
+  }
+}
