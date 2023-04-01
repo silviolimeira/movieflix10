@@ -3,19 +3,20 @@ import Home from 'pages/Home';
 import history from 'util/history';
 import Navbar from 'components/Navbar';
 import Auth from 'pages/Admin';
+import PrivateRoute from 'components/PrivateRoute';
 
 const Routes = () => (
   <Router history={history}>
     <Navbar />
     <Switch>
-      <Redirect from="/" to="/admin/auth" exact />
+      <Redirect from="/" to="/home" exact />
       <Redirect from="/admin/auth" to="/admin/auth/login" exact />
       <Route path="/admin/auth">
         <Auth />
       </Route>
-      <Route path="/home">
+      <PrivateRoute path="/home" roles={['ROLE_VISITOR', 'ROLE_MEMBER']}>
         <Home />
-      </Route>
+      </PrivateRoute>
     </Switch>
   </Router>
 );
