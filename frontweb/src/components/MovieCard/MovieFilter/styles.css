@@ -1,0 +1,51 @@
+.product-filter-select__indicator-separator {
+  display: none;
+}
+
+.product-filter-select__control {
+  background-color: #6c6c6c !important;
+  height: 50px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  color: #fff;
+  mix-blend-mode: normal;
+}
+
+.product-filter-name-container input:focus {
+  box-shadow: none;
+}
+
+.product-filter-name-container input::placeholder {
+  color: #fff;
+}
+
+.product-filter-select__placeholder {
+  color: #fff !important;
+}
+
+.product-filter-select__value-container {
+  color: #fff;
+}
+.product-filter-select__value-container--has-value {
+  color: #fff;
+}
+
+.product-filter-select__single-value {
+  color: #fff !important;
+}
+
+.product-filter-select__menu {
+  background-color: #6c6c6c !important;
+  color: #000 !important;
+}
+
+@media (min-width: 576px) {
+  .product-filter-select__control {
+    width: 260px;
+  }
+}
