@@ -68,3 +68,9 @@
     margin-bottom: 40px;
   }
 }
+
+@media (min-width: 992px) {
+  .movie-card-img {
+    padding-top: 16px;
+  }
+}

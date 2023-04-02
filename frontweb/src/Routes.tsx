@@ -4,6 +4,7 @@ import history from 'util/history';
 import Navbar from 'components/Navbar';
 import Auth from 'pages/Admin';
 import PrivateRoute from 'components/PrivateRoute';
+import ReviewPage from 'pages/ReviewPage/ReviewPage';
 
 const Routes = () => (
   <Router history={history}>
@@ -16,6 +17,9 @@ const Routes = () => (
       </Route>
       <PrivateRoute path="/home" roles={['ROLE_VISITOR', 'ROLE_MEMBER']}>
         <Home />
+      </PrivateRoute>
+      <PrivateRoute path="/movies/:movieId">
+        <ReviewPage />
       </PrivateRoute>
     </Switch>
   </Router>

@@ -1,0 +1,157 @@
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.review-card {
+  background: #6c6c6c;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.review-card h1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  margin-bottom: 8px;
+}
+
+.star {
+  margin-right: 10px;
+}
+
+.review-card p {
+  box-sizing: border-box;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 10px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+  letter-spacing: -0.015em;
+
+  color: #9e9e9e;
+}
+
+.review-card-item {
+}
+
+@media (min-width: 576px) {
+  .review-card {
+    margin: 10px 0 0 0;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .review-card {
+    margin: 40px 30px;
+    padding: 20px 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .review-card {
+    margin: 40px 30px;
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .review-card {
+    margin: 40px 124px;
+  }
+}
+/*
+.container {
+    background-color: #525252;
+}
+
+.review-list {
+    background-color: #525252;
+    background-color: red;
+    padding: 5px;
+
+}
+
+.review-card {
+    background-color: #6C6C6C;
+    border-radius: 4px;    
+}
+
+.review-card-item {
+    background-color: #6C6C6C;
+    padding: 10px;
+}
+
+.star {
+    margin-right: 10px;
+}
+
+.review-card-item h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    margin-bottom: 10px;
+
+}
+
+.review-card-item p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    letter-spacing: -0.015em;
+
+    color: #9E9E9E;
+
+    box-sizing: border-box;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+
+    padding: 10px;
+
+}
+
+@media (min-width: 320px) {
+    .review-card-item {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 576px) {
+    .review-card-item {
+        margin-right: 30px;
+    }
+
+    .review-card-item h1 {    
+        margin-left: 23px;
+    }
+}
+*/
