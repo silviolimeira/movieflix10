@@ -69,7 +69,7 @@ const Home = () => {
       </div>
       <div className="row">
         {page?.content.map((movie) => (
-          <div key={movie.id} className="col-sm-6 col-md-6 col-lg-6">
+          <div key={movie.id} className="col-sm-6 col-md-6 col-lg-3">
             <MovieCard movie={movie} />
           </div>
         ))}
