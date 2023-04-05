@@ -4,10 +4,10 @@ import history from './history';
 import { getAuthData } from './storage';
 
 export const BASE_URL =
-  process.env.REACT_APP_BACKEND_URL ?? 'http://localhost:8080';
+  process.env.REACT_APP_BACKEND_URL ?? 'https://movieflix-devsuperior.herokuapp.com';
 
-const CLIENT_ID = process.env.REACT_APP_CLIENT_ID ?? 'movieflix';
-const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET ?? 'movieflix123';
+const CLIENT_ID = process.env.REACT_APP_CLIENT_ID ?? 'myclientid';
+const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET ?? 'myclientsecret';
 
 type LoginData = {
   username: string;
@@ -38,9 +38,9 @@ export const requestBackend = (config: AxiosRequestConfig) => {
   console.log('requestBackend config: ', config);
   const headers = config.withCredentials
     ? {
-        ...config.headers,
-        Authorization: 'Bearer ' + getAuthData().access_token,
-      }
+      ...config.headers,
+      Authorization: 'Bearer ' + getAuthData().access_token,
+    }
     : config.headers;
   return axios({ ...config, baseURL: BASE_URL, headers });
 };

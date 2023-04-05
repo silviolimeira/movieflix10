@@ -43,3 +43,7 @@ a:hover {
 .base-input::placeholder {
   color: #9E9E9E;
 }
+
+.toast-container {
+  color: black;
+}

@@ -15,7 +15,7 @@ function App() {
   return (
     <AuthContext.Provider value={{ authContextData, setAuthContextData }}>
       <Routes />
-      <ToastContainer />
+      <ToastContainer className="toast-container" toastStyle={{ backgroundColor: "#FFC700" }} />
     </AuthContext.Provider>
   );
 }
